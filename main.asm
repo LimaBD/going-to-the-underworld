@@ -1,20 +1,47 @@
-; TODO: make introduction.
-
-                global _start
+; TODO: make introduction to this file.
 
 
-                section         .data
-message:        db            	"This is Going To The Underworld!", 0xA, 0xD
+; TODO: add extern functions: 'extern function'.
+global _start
+extern print_frame
 
 
-                section     	.text
-_start:        	mov            	rax, 1
-                mov            	rdi, 1
-                mov           	rsi, message
-                mov           	rdx, 4
-                syscall
+section .data
+	; TODO: research how much large
+	;       should be the frame string.
+	%define frame_len 16
+	frame db "this is a frame.", 0
 
-				; Finish
-                mov            	rax, 60
-                xor            	rdi, rdi
-                syscall    
+
+section	text
+_start:
+	call presentation
+	call menu
+	call game
+	call end
+	ret
+
+
+presentation:
+	; TODO: make presentation.
+	ret
+
+
+menu:
+	; TODO: make menu.
+	mov rsi, frame
+	mov rdi, frame_len
+	call print_frame
+	ret
+
+
+game:
+	; TODO: make game.
+	ret
+
+
+end:
+	xor rdi, rdi
+	mov rax, 60
+    syscall
+	ret
