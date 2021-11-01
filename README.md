@@ -8,7 +8,14 @@ This is a shooter game made with Netwide Assembler (NASM) for 64-bit Linux, the 
 1. Run `$ ./going-to-the-underworld`.
 
 ## How it works
-The entire game use ░ ▒ ▓ █ ▀ ▄ ▌ ▐ ■ ▪ characters.
+The entire game use ░ ▒ ▓ █ ▀ ▄ ▌ ▐ ■ ▪ characters to render the graphics.
+
+![Basic Game Flow](docs/gttu-flow.svg)
+
+![Game Flow](docs/game-menu-flow.svg)
+
+![Frames Flow](docs/frames-rendering-flow.svg)
+
 
 ## Code standardization
 To maintain the same style of code, we will maintain a continuous distance for labels, instructions and operands:
