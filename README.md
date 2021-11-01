@@ -15,15 +15,3 @@ The entire game use ░ ▒ ▓ █ ▀ ▄ ▌ ▐ ■ ▪ characters to render
 ![Game Flow](docs/game-menu-flow.svg)
 
 ![Frames Flow](docs/frames-rendering-flow.svg)
-
-
-## Code standardization
-To maintain the same style of code, we will maintain a continuous distance for labels, instructions and operands:
-```
-  ___________________________________________
- *                                           *
-|    LABELS      INSTRUCTIONS     OPERANDS    |
-|<------------>|<------------>|<------------> |
-|  14 spaces       14 spaces                  |
- *___________________________________________*
-```
