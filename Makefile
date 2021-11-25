@@ -10,7 +10,7 @@ graphics.o: graphics.asm
 		nasm $(debug_flags) -o graphics.o -f elf64 graphics.asm
 
 going-to-the-underworld: $(object_files)
-		ld -s $(debug_flags) -o going-to-the-underworld $(object_files)
+		ld $(debug_flags) -o going-to-the-underworld  $(object_files)
 
 clean:
 		rm -f *.o
